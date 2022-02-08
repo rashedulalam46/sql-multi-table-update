@@ -1,11 +1,10 @@
 ﻿-- =============================================
 -- Author:		Rashedul Alam
--- Create date: <Create Date,,>
--- Description:	<Description,,>
+-- Create date: January, 2022
+-- Description:	SQL multiple tables update
+-- Execute dbo.MultiTableUpdate
 -- =============================================
-CREATE PROCEDURE [dbo].[MultiTableUpdate]
-	-- Add the parameters for the stored procedure here
-	
+CREATE PROCEDURE [dbo].[MultiTableUpdate]	
 AS
 BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from
