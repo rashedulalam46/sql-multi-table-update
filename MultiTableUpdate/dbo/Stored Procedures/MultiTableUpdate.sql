@@ -1,7 +1,7 @@
 ﻿-- =============================================
 -- Author:		Rashedul Alam
 -- Create date: January, 2022
--- Description:	SQL multiple tables update
+-- Description:	SQL update command to update multiple tables
 -- Execute dbo.MultiTableUpdate
 -- =============================================
 CREATE PROCEDURE [dbo].[MultiTableUpdate]	
@@ -12,7 +12,8 @@ BEGIN
 	SET NOCOUNT ON;
 
 	UPDATE S1
-	SET     S1.Phone = S2.Phone,
+	SET     
+		S1.Phone	= S2.Phone,
 		S1.Email    = S2.Email
 	FROM	Users AS S2 INNER JOIN
 			Students AS S1 ON S2.StudentId = S1.StudentId
