@@ -16,7 +16,6 @@ BEGIN
 		S1.Phone	= S2.Phone,
 		S1.Email    = S2.Email
 	FROM	Users AS S2 INNER JOIN
-			Students AS S1 ON S2.StudentId = S1.StudentId
-    
+			Students AS S1 ON S2.StudentId = S1.StudentId    
 	
 END
